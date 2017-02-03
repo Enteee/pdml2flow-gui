@@ -1,4 +1,4 @@
-# Pdml2flow-Gui
+# pdml2flow-Gui
 _powered by [Docker ELK stack](https://github.com/deviantony/docker-elk)_
 
 # Requirements
@@ -36,7 +36,10 @@ Start the pdml2flow-gui using up.sh:
 $ ./up.sh
 ```
 
-Then access Kibana UI by hitting [http://localhost:5601](http://localhost:5601) with a web browser. All you should have to do is to hit the create button.
+Then access Kibana UI by hitting [http://localhost:5601](http://localhost:5601) with a web browser. All you should have to do is to set the index name to `pdml2flow-*` and hit the create button.
+
+![Index name](/doc/index-name.png?raw=true)
+
 See: https://www.elastic.co/guide/en/kibana/current/setup.html#connect
 
 By default, the stack exposes the following ports:
