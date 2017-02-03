@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  pdml2flow:
+    build: .
+    environment:
+      - SNIFF_IFACE
+      - ES_HOST
+      - ES_PORT
+      - ES_INDEX
+      - ES_TYPE
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    network_mode: "host"
