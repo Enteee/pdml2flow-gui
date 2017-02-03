@@ -145,4 +145,4 @@ export ES_TYPE=${BASH_REMATCH[8]}
 env | grep -E -e "$ENV_SAVE_VARS" > "${ENV_FILE}"
 
 # Start docker
-[[ "$SOURCED" == "0" ]] && sudo docker-compose up --build
+[[ "$SOURCED" == "0" ]] && sudo -E docker-compose up --build
