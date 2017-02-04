@@ -2,6 +2,11 @@
 # Initializes environment and starts
 # the docker sensor
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 # Dialog status code
 DIALOG_OK=0
 DIALOG_CANCEL=1

@@ -1,10 +1,10 @@
 version: '2'
 
 services:
-  pdml2flow:
-    extends:
-      file: pdml2flow/docker-compose.yml
-      service: pdml2flow
+#  pdml2flow:
+#    extends:
+#      file: pdml2flow/docker-compose.yml
+#      service: pdml2flow
 
   elasticsearch:
     build: elasticsearch/

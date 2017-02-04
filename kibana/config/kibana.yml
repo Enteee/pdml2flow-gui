@@ -90,3 +90,6 @@ elasticsearch.url: "http://elasticsearch:9200"
 # Set the interval in milliseconds to sample system and process performance
 # metrics. Minimum is 100ms. Defaults to 10000.
 # ops.interval: 10000
+
+# Disable X-Pack security
+xpack.security.enabled: false

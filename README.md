@@ -1,4 +1,4 @@
-# pdml2flow-Gui
+# pdml2flow-gui
 _powered by [Docker ELK stack](https://github.com/deviantony/docker-elk)_
 
 # Requirements
@@ -9,14 +9,6 @@ _powered by [Docker ELK stack](https://github.com/deviantony/docker-elk)_
 2. Install [Docker-compose](http://docs.docker.com/compose/install/) **version >= 1.6**.
 3. Install [Dialog](https://wiki.ubuntuusers.de/Dialog/)
 4. Clone this repository
-
-## Increase max_map_count on your host (Linux)
-
-You need to increase `max_map_count` on your Docker host:
-
-```bash
-$ sudo sysctl -w vm.max_map_count=262144
-```
 
 ## SELinux
 
@@ -30,14 +22,12 @@ For example on Redhat and CentOS, the following will apply the proper context:
 
 # Usage
 
-Start the pdml2flow-gui using up.sh:
-
+1. Start the pdml2flow-gui using up.sh:
 ```bash
-$ ./up.sh
+$ sudo ./up.sh
 ```
-
-Then access Kibana UI by hitting [http://localhost:5601](http://localhost:5601) with a web browser. All you should have to do is to set the index name to `pdml2flow-*` and hit the create button.
-
+2. Access Kibana UI by hitting [http://localhost:5601](http://localhost:5601) with a web browser.
+3. Set the index name to `pdml2flow-*` and hit the create button.
 ![Index name](/doc/index-name.png?raw=true)
 
 See: https://www.elastic.co/guide/en/kibana/current/setup.html#connect
